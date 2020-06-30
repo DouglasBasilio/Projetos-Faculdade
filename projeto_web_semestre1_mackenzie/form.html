@@ -1,0 +1,95 @@
+<!Doctype html>
+
+<html lang="pt-br">
+		
+	<head>
+		<title>Sintetize - Contato</title>
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+            <link rel="stylesheet" href="css/form.css" type="text/css"/>
+			<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	
+	<body >
+        <!--Navegação-->
+		<nav id="menu">		
+		<ul>
+            <li>
+                <a href="index.html" >INÍCIO</a>
+            </li>
+            <li>
+                <a href="sobre.html">SOBRE</a>
+            </li>
+            <li>
+                <a href="consoles.html">CONSOLES</a>
+            </li>    
+            <li>
+                <a href="jogos.html">JOGOS</a>
+            </li>
+		    <li>
+                <a class="active_form" href="form.html">CONTATO</a>
+            </li>
+		</ul>
+		</nav> 	
+        
+        <!-- Formulário -->
+        <div id="principal"> 
+        <div id="form">
+            <form name="form-web" method="post" id="formulario-web">        
+                <h4>Preencha os campos abaixo :</h4>
+                <label for="nome">Nome Completo</label>
+                <input type="text" class="texto" name="nome" id="nome" required/>
+  
+                <label>E-mail</label>
+                <input type="text" class="texto" name="email" id="email" required/>
+            
+                <label>Telefone</label>
+                <input type="tel" maxlength="15" name="tel" placeholder="(XX) XXXX-XXXX" required/> 
+         
+                <label>Melhor horário para contato</label>
+                <input type="time" value="09:00" max="18:00" step="1800" name="horario" required>
+  
+                <label>Assunto</label>
+                    <select required>
+                        <option value=""></option>
+                        <option value="Orçamento">Orçamento</option>
+                        <option value="Sugestão">Sugestão</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="Outros">Outros</option>
+                    </select> 
+            
+                <label>Produto</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="vg_novo">Video-Game Novo</option>
+                        <option value="vg_usado">Video-Game Usado</option>
+                        <option value="j_novo">Jogos Novos</option>
+                        <option value="j_usado">Jogos Usados</option>
+                        <option value="outro_prod">Outros</option>
+                    </select> 
+  
+                <label>Mensagem</label>   
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem." required></textarea>
+        
+                <input type="submit" class="botao" value="Enviar" />
+                <input type="reset" class="botao" value="Limpar" />
+            </form> 
+        </div>
+            <!-- Fim Formulário --> 
+      <div class="row">
+         <div class="col-smart-6 col-tablet-6">
+            <div class="cont">Telefone: (11) 9999-9999</div>
+         </div>
+         <div class="col-smart-6 col-tablet-6">
+            <div class="cont">End.: Rua Mackenzie, 87</div>
+         </div>
+      </div>
+        </div> 
+        <!-- Footer -->
+        <footer id="rodape">
+        <p>Copyright 2019 &copy; - by Douglas Basilio</p>
+            <p><a href="http://facebook.com/basilio.douglas" target="_blank">Facebook</a> | <a href="https://www.linkedin.com/in/douglas-basilio-dos-santos-62017144/" target="_blank">Linkedin</a></p>
+		</footer>
+	</body>
+</html>

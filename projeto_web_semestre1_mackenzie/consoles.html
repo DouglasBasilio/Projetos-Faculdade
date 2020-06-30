@@ -1,0 +1,140 @@
+<!Doctype html>
+
+<html lang="pt-br">
+		
+    <head>
+        <!--Título-->
+        <title>Sintetize - VideoGames</title>
+        <meta charset="utf-8"/>	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Estilo CSS-->
+        <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+        <link rel="stylesheet" href="css/consoles.css" type="text/css"/>
+	</head>
+		
+	
+	<body >
+        <!--Navegação-->
+        <header>
+		<nav id="menu">		
+		<ul>
+            <li>
+                <a  href="index.html" >INÍCIO</a>
+            </li>
+            <li>
+                <a href="sobre.html">SOBRE</a>
+            </li>
+            <li>
+                <a class="active_ini" href="consoles.html">CONSOLES</a>
+            </li>    
+            <li>
+                <a href="jogos.html">JOGOS</a>
+            </li>
+		    <li>
+                <a href="form.html">CONTATO</a>
+            </li>
+		</ul>
+		</nav> 	
+        </header>
+        <div id="principal">
+            <h2 style="text-align:center">Galeria de Video-Games</h2>
+
+            <div class="container">
+            <div class="galeria">
+            <div class="numbertext">1 / 6</div>
+            <img src="imagens/ps4.jpg" style="width:100%">
+            </div>
+
+            <div class="galeria">
+            <div class="numbertext">2 / 6</div>
+            <img src="imagens/xbox-one-s.jpg" style="width:100%">
+            </div>
+
+            <div class="galeria">
+            <div class="numbertext">3 / 6</div>
+            <img src="imagens/wii.jpg" style="width:100%">
+            </div>
+    
+            <div class="galeria">
+            <div class="numbertext">4 / 6</div>
+            <img src="imagens/switch.jpg" style="width:100%">
+            </div>
+
+            <div class="galeria">
+            <div class="numbertext">5 / 6</div>
+            <img src="imagens/megadrive.jpg" style="width:100%">
+            </div>
+    
+            <div class="galeria">
+            <div class="numbertext">6 / 6</div>
+            <img src="imagens/nintendo64.jpg" style="width:100%">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+
+            <div class="row">
+            <div class="column">
+            <img class="opac cursor" src="imagens/ps4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Playstation 4">
+            </div>
+            <div class="column">
+            <img class="opac cursor" src="imagens/xbox-one-s.jpg" style="width:100%" onclick="currentSlide(2)" alt="Xbox One">
+            </div>
+            <div class="column">
+            <img class="opac cursor" src="imagens/wii.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nintendo Wii">
+            </div>
+            <div class="column">
+            <img class="opac cursor" src="imagens/switch.jpg" style="width:100%" onclick="currentSlide(4)" alt="Nintendo Switch">
+            </div>
+            <div class="column">
+            <img class="opac cursor" src="imagens/megadrive.jpg" style="width:100%" onclick="currentSlide(5)" alt="Mega Drive">
+            </div>    
+            <div class="column">
+            <img class="opac cursor" src="imagens/nintendo64.jpg" style="width:100%" onclick="currentSlide(6)" alt="Nintendo 64 bits">
+            </div>
+            </div>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("galeria");
+                var dots = document.getElementsByClassName("opac");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+        </div>
+
+        <footer id="rodape">
+        <p>Copyright 2019 &copy; - by Douglas Basilio</p>
+            <p><a href="http://facebook.com/basilio.douglas" target="_blank">Facebook</a> | <a href="https://www.linkedin.com/in/douglas-basilio-dos-santos-62017144/" target="_blank">Linkedin</a></p>
+		</footer>
+		
+	</body>
+</html>

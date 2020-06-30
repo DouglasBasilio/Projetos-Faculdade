@@ -1,0 +1,56 @@
+div#principal {
+    background-image: url(../imagens/background-contato.jpg);
+}
+
+div#form {
+  border-radius: 5px;
+  background-color: rgba(10,23,55,0.7);
+  margin: 2% 10% 2% 10%;
+  padding: 2.5%;
+}
+
+div#principal label {
+    font-family: 'Titillium Web', sans-serif;
+    float: left;
+    font-weight: bolder;
+    color: white;
+}
+
+div#principal h4 {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin: 0 0 10px 0;
+    color:#ffffff;
+    font-size: 11pt;
+    font-weight: bolder;
+}
+
+input[type=text], [type=tel], [type=time], textarea, select {
+  font-family: 'Titillium Web', sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+div#principal .botao {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
+    background: #2E8B57;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+}
+
+div#principal .botao:hover {
+    background: #FF4500;
+    text-shadow: none;
+}
+
+div#principal .botao{
+    cursor: pointer;
+}
+
